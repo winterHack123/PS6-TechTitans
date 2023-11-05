@@ -7,6 +7,7 @@ export default function Mainpage() {
     <>
     <h1 className='center-tag'>✨Checkout the main Interview topics ✨</h1>
     <div className='infobox-container'>
+
       <Infoboxes 
     topic="DSA" 
     description="involves organizing data for efficient storage and retrieval crucial for problem-solving and software development" 

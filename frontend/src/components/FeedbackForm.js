@@ -78,13 +78,16 @@ function FeedbackForm() {
 
       <form >
         <h2>View feedback</h2>
+      <label>
+        Meeting Id:
       <input
         type="text"
         value={fetchMeetingId}
         onChange={(e) => setFetchMeetingId(e.target.value)}
-      />
+      /></label>
+
       <label>
-        Name:
+        Name of Mock partner:
         <input
           type="text"
           value={fetchName}
@@ -95,7 +98,7 @@ function FeedbackForm() {
       <button onClick={handleFetchFeedback}>Fetch Feedback</button>
       
 
-      <p>{JSON.stringify(fetchedFeedback)}</p>
+      <p>Feedback:{JSON.stringify(fetchedFeedback)}</p>
       </form>
       </div>
 
